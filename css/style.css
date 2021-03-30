@@ -1,2 +1,16 @@
-p {border: solid rgb(86, 86, 196) 2px;font-size: 20px; background-color: aqua;
+
+*{
+    font: size 20px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+}
+
+
+p {border: solid rgb(86, 86, 196) 2px; background-color: aqua;text-align: center;padding-left: 25px;
+}
+
+.first{ background-color: blueviolet;padding-left: 25px;
+
+}
+
+li{
+    background-color: crimson;padding-left: 25px;
 }
