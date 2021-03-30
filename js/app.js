@@ -83,7 +83,7 @@ for (let i = 0; i < 3; i++) {
         guessNum = prompt("too high , try again?");
         // console.log("rong");
      } if(i==2){
-        guess = alert("the correct answer is 7");
+         alert("the correct answer is 7");
     }
 }
 
@@ -118,7 +118,6 @@ alert('your sore is '+ score);
 
 
 alert('bye bye ' + UserName);
-
 
 
 
