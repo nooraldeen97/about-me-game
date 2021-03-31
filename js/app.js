@@ -83,24 +83,27 @@ function Q5 () {
 }
 
 
+function Q6 (){
 
-let guessNum = prompt("guess the number which i have in my mind its (1-10) you have four trial to guess ?");
-let num = 7
-for (let i = 0; i < 3; i++) {
-
-    if (guessNum == num) {
-        guessNum = alert("correct answer");
-        // console.log("correct");
-        score++;
-        break;
-    } else if (guessNum < num) {
-        guessNum = prompt("too low, try again?");
-    } else if (guessNum > num) {
-        guessNum = prompt("too high , try again?");
-        // console.log("rong");
-     } if(i==2){
-         alert("the correct answer is 7");
+    let guessNum = prompt("guess the number which i have in my mind its (1-10) you have four trial to guess ?");
+    let num = 7
+    for (let i = 0; i < 3; i++) {
+    
+        if (guessNum == num) {
+            guessNum = alert("correct answer");
+            // console.log("correct");
+            score++;
+            break;
+        } else if (guessNum < num) {
+            guessNum = prompt("too low, try again?");
+        } else if (guessNum > num) {
+            guessNum = prompt("too high , try again?");
+            // console.log("rong");
+         } if(i==2){
+             alert("the correct answer is 7");
+        }
     }
+
 }
 
 
