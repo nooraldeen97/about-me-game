@@ -2,14 +2,14 @@
 
 let UserName = prompt('what\'s your name?')
 alert("hello " + UserName + " welcome to my website")
-let score = 0 ;
+let score = 0;
 
 
 
-function Q1(){
+function Q1() {
 
     let ginder = prompt("am I a male ?")
-    
+
     if (ginder.toLowerCase() === 'yes' || ginder.toLowerCase() === 'y') {
         // console.log("correct");
         alert('correct');
@@ -24,7 +24,7 @@ function Q1(){
 function Q2() {
 
     let home = prompt("was I born in KSA?")
-    
+
     if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
         // console.log("correct");
         alert('rong');
@@ -36,10 +36,10 @@ function Q2() {
 
 }
 
-function Q3 () {
+function Q3() {
 
     let language = prompt("am I good at english?")
-    
+
     if (language.toLowerCase() === 'yes' || language.toLowerCase() === 'y') {
         // console.log("correct");
         alert('correct');
@@ -53,10 +53,10 @@ function Q3 () {
 
 
 
-function Q4 () {
+function Q4() {
 
     let topics = prompt("Do I like the math and pyhiscs?")
-    
+
     if (topics.toLowerCase() === 'yes' || topics.toLowerCase() === 'y') {
         // console.log("correct");
         alert('correct');
@@ -68,9 +68,9 @@ function Q4 () {
 
 }
 
-function Q5 () {
+function Q5() {
     let tech = prompt("Do I like the proramming?")
-    
+
     if (tech.toLowerCase() === 'yes' || tech.toLowerCase() === 'y') {
         // console.log("correct");
         alert('correct');
@@ -83,12 +83,12 @@ function Q5 () {
 }
 
 
-function Q6 (){
+function Q6() {
 
     let guessNum = prompt("guess the number which i have in my mind its (1-10) you have four trial to guess ?");
     let num = 7
     for (let i = 0; i < 3; i++) {
-    
+
         if (guessNum == num) {
             guessNum = alert("correct answer");
             // console.log("correct");
@@ -99,49 +99,53 @@ function Q6 (){
         } else if (guessNum > num) {
             guessNum = prompt("too high , try again?");
             // console.log("rong");
-         } if(i==2){
-             alert("the correct answer is 7");
+        } if (i == 2) {
+            alert("the correct answer is 7");
         }
     }
 
 }
 function Q7() {
-    let planet = ['mercury' , 'venus', 'earth', 'mars', 'saturn', 'neptune'];
-    let pGuess ='';  
+    let planet = ['mercury', 'venus', 'earth', 'mars', 'saturn', 'neptune'];
+    let pGuess = '';
     // this loop for the attempt   
-        for (let x = 0; x < 6; x++) {
-           pGuess= pGuess.toLowerCase();
-           pGuess=prompt('mention one planet in our galaxy!!');
-    
-         for (let y = 0; y < planet.length; y++){
-            if (pGuess==planet[y]) {
+
+    for (let x = 0; x < 6; x++)
+    {
+        pGuess = pGuess.toLowerCase();
+        pGuess = prompt('mention one planet in our galaxy!!');
+
+        for (let y = 0; y < planet.length; y++) {
+            if (pGuess == planet[y]) {
                 alert('amaizing!! you are correct')
                 score++;
-                 x=6;
+                x = 6;
                 break;
             }
-    
-         }
-         if (x==5){
-            alert ('no more trials\n'+'the right answers are ' +planet)
-          }else if(x<6){
-             alert('this is wrong');
+
         }
-    
+        if (x == 5) {
+            alert('no more trials\n' + 'the right answers are ' + planet);
+        } else if (x < 6) {
+            alert('this is wrong');
         }
-    {
-        Q1();
-        Q2();
-        Q3();
-        Q4();
-        Q5();
-        Q6();
-        Q7();
-        alert('your sore is '+ score);
-        alert('bye bye ' + UserName);
     }
 
+
+
+
 }
+
+Q1();
+Q2();
+Q3();
+Q4();
+Q5();
+Q6();
+Q7();
+alert('your sore is ' + score);
+alert('bye bye ' + UserName);
+
 
 
 // alert('"mention my preferable colors among these three color (red, blue, green) in order, which the most fovairate one take 1 and so on?"');
