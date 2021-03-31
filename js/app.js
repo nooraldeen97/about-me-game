@@ -53,17 +53,21 @@ function Q3 () {
 
 
 
+function Q4 () {
 
-let topics = prompt("Do I like the math and pyhiscs?")
+    let topics = prompt("Do I like the math and pyhiscs?")
+    
+    if (topics.toLowerCase() === 'yes' || topics.toLowerCase() === 'y') {
+        // console.log("correct");
+        alert('correct');
+        score++
+    } else if (topics.toLowerCase() === 'no' || topics.toLowerCase() === 'n') {
+        // console.log("rong");
+        alert('rong');
+    }
 
-if (topics.toLowerCase() === 'yes' || topics.toLowerCase() === 'y') {
-    // console.log("correct");
-    alert('correct');
-    score++
-} else if (topics.toLowerCase() === 'no' || topics.toLowerCase() === 'n') {
-    // console.log("rong");
-    alert('rong');
 }
+
 
 
 let tech = prompt("Do I like the proramming?")
