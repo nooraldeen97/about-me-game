@@ -68,18 +68,20 @@ function Q4 () {
 
 }
 
+function Q5 () {
+    let tech = prompt("Do I like the proramming?")
+    
+    if (tech.toLowerCase() === 'yes' || tech.toLowerCase() === 'y') {
+        // console.log("correct");
+        alert('correct');
+        score++;
+    } else if (tech.toLowerCase() === 'no' || tech.toLowerCase() === 'n') {
+        // console.log("rong");
+        alert('rong');
+    }
 
-
-let tech = prompt("Do I like the proramming?")
-
-if (tech.toLowerCase() === 'yes' || tech.toLowerCase() === 'y') {
-    // console.log("correct");
-    alert('correct');
-    score++;
-} else if (tech.toLowerCase() === 'no' || tech.toLowerCase() === 'n') {
-    // console.log("rong");
-    alert('rong');
 }
+
 
 
 let guessNum = prompt("guess the number which i have in my mind its (1-10) you have four trial to guess ?");
