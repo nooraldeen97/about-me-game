@@ -105,38 +105,64 @@ function Q6 (){
     }
 
 }
-
-
-
-
-alert('"mention my preferable colors among these three color (red, blue, green) in order, which the most fovairate one take 1 and so on?"');
-
-let favColor = ['blue', 'green', 'red'];
-let guessColor = [prompt('first color').toLowerCase(), prompt('second color').toLowerCase(), prompt('third color').toLowerCase()];
-
-for (let i = 0; i < 5; i++) {
-
-    if (guessColor[0] == favColor[0] && guessColor[1] == favColor[1] && guessColor[2] == favColor[2]) {
-        guessColor = alert("correct answer");
-        // console.log("correct");
-        score++;
-        break;
-    } else if (guessColor[0] !== favColor[0] || guessColor[1] !== favColor[1] || guessColor[2] !== favColor[2]) {
-        alert("wrong, try again?");
-        guessColor = [prompt('first color').toLowerCase(), prompt('second color').toLowerCase(), prompt('third color').toLowerCase()];
-        // console.log("rong");
-        if (i == 4)
-            alert("the correct answer is (blue , green , red)");
+function Q7() {
+    let planet = ['mercury' , 'venus', 'earth', 'mars', 'saturn', 'neptune'];
+    let pGuess ='';  
+    // this loop for the attempt   
+        for (let x = 0; x < 6; x++) {
+           pGuess= pGuess.toLowerCase();
+           pGuess=prompt('mention one planet in our galaxy!!');
+    
+         for (let y = 0; y < planet.length; y++){
+            if (pGuess==planet[y]) {
+                alert('amaizing!! you are correct')
+                score++;
+                 x=6;
+                break;
+            }
+    
+         }
+         if (x==5){
+            alert ('no more trials\n'+'the right answers are ' +planet)
+          }else if(x<6){
+             alert('this is wrong');
+        }
+    
+        }
+    {
+        Q1();
+        Q2();
+        Q3();
+        Q4();
+        Q5();
+        Q6();
+        Q7();
+        alert('your sore is '+ score);
+        alert('bye bye ' + UserName);
     }
 
 }
 
-alert('your sore is '+ score);
 
+// alert('"mention my preferable colors among these three color (red, blue, green) in order, which the most fovairate one take 1 and so on?"');
 
+// let favColor = ['blue', 'green', 'red'];
+// let guessColor = [prompt('first color').toLowerCase(), prompt('second color').toLowerCase(), prompt('third color').toLowerCase()];
 
+// for (let i = 0; i < 5; i++) {
 
-alert('bye bye ' + UserName);
+//     if (guessColor[0] == favColor[0] && guessColor[1] == favColor[1] && guessColor[2] == favColor[2]) {
+//         guessColor = alert("correct answer");
+//         // console.log("correct");
+//         score++;
+//         break;
+//     } else if (guessColor[0] !== favColor[0] || guessColor[1] !== favColor[1] || guessColor[2] !== favColor[2]) {
+//         alert("wrong, try again?");
+//         guessColor = [prompt('first color').toLowerCase(), prompt('second color').toLowerCase(), prompt('third color').toLowerCase()];
+//         // console.log("rong");
+//         if (i == 4)
+//             alert("the correct answer is (blue , green , red)");
+//     }
 
-
+// }
 
