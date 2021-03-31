@@ -1,19 +1,23 @@
 'use strict';
+
 let UserName = prompt('what\'s your name?')
-
 alert("hello " + UserName + " welcome to my website")
-
 let score = 0 ;
 
-let ginder = prompt("am I a male ?")
 
-if (ginder.toLowerCase() === 'yes' || ginder.toLowerCase() === 'y') {
-    // console.log("correct");
-    alert('correct');
-    score++;
-} else if (ginder.toLowerCase() === 'no' || ginder.toLowerCase() === 'n') {
-    // console.log("rong");
-    alert('rong');
+
+function Q1();{
+
+    let ginder = prompt("am I a male ?")
+    
+    if (ginder.toLowerCase() === 'yes' || ginder.toLowerCase() === 'y') {
+        // console.log("correct");
+        alert('correct');
+        score++;
+    } else if (ginder.toLowerCase() === 'no' || ginder.toLowerCase() === 'n') {
+        // console.log("rong");
+        alert('rong');
+    }
 }
 
 
