@@ -6,7 +6,7 @@ let score = 0 ;
 
 
 
-function Q1();{
+function Q1(){
 
     let ginder = prompt("am I a male ?")
     
@@ -21,28 +21,34 @@ function Q1();{
 }
 
 
+function Q2() {
 
-let home = prompt("was I born in KSA?")
+    let home = prompt("was I born in KSA?")
+    
+    if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
+        // console.log("correct");
+        alert('rong');
+    } else if (home.toLowerCase() === 'no' || home.toLowerCase() === 'n') {
+        // console.log("rong");
+        alert('correct');
+        score++
+    }
 
-if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
-    // console.log("correct");
-    alert('rong');
-} else if (home.toLowerCase() === 'no' || home.toLowerCase() === 'n') {
-    // console.log("rong");
-    alert('correct');
-    score++
 }
 
+function Q3 () {
 
-let language = prompt("am I good at english?")
+    let language = prompt("am I good at english?")
+    
+    if (language.toLowerCase() === 'yes' || language.toLowerCase() === 'y') {
+        // console.log("correct");
+        alert('correct');
+        score++;
+    } else if (language.toLowerCase() === 'no' || language.toLowerCase() === 'n') {
+        // console.log("rong");
+        alert('rong');
+    }
 
-if (language.toLowerCase() === 'yes' || language.toLowerCase() === 'y') {
-    // console.log("correct");
-    alert('correct');
-    score++;
-} else if (language.toLowerCase() === 'no' || language.toLowerCase() === 'n') {
-    // console.log("rong");
-    alert('rong');
 }
 
 
