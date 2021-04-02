@@ -1,6 +1,6 @@
 # about-me-game
 
-## hello there , you have five questions about me , its a game just answer if correct with yes/y or if rong with no/n ,
+## hello there , you have seven questions about me , its a game just answer if correct with yes/y or if rong with no/n ,
 ## and it will show you if your answer correct or rong after each question : 
 **am I a male ?** <br>
 **was I born in KSA?** <br>
@@ -11,5 +11,5 @@
 **mention my preferable colors among these three color (red, blue, green) in order, which the most fovairate one take 1 and so on?**<br>
 *When you finish the game the score will appear in your screen out of seven .*
 
-here Alaa Abu Issa were a driver 
+here Alaa Abu Issa was a driver <br>
 and noor aldeen was a navegator
