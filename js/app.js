@@ -85,23 +85,26 @@ function Q5() {
 
 function Q6() {
 
-    let guessNum = prompt("guess the number which i have in my mind its (1-10) you have four trial to guess ?");
+    let guessNum;
     let num = 7
     for (let i = 0; i < 3; i++) {
 
+        guessNum = prompt("guess the number which i have in my mind its (1-10) you have four trial to guess ?");
         if (guessNum == num) {
-            guessNum = alert("correct answer");
+            alert("correct answer");
             // console.log("correct");
             score++;
+            i = 3;
             break;
         } else if (guessNum < num) {
-            guessNum = prompt("too low, try again?");
+            alert("too low");
         } else if (guessNum > num) {
-            guessNum = prompt("too high , try again?");
+            alert("too high");
             // console.log("rong");
         } if (i == 2) {
             alert("the correct answer is 7");
         }
+      
     }
 
 }
@@ -148,6 +151,7 @@ alert('bye bye ' + UserName);
 
 
 
+
 // alert('"mention my preferable colors among these three color (red, blue, green) in order, which the most fovairate one take 1 and so on?"');
 
 // let favColor = ['blue', 'green', 'red'];
@@ -170,3 +174,23 @@ alert('bye bye ' + UserName);
 
 // }
 
+// let GName=prompt('is my name nooraldeen?');
+// GName=GName.toLowerCase();
+// for (let x = 0; x < 4; x++) {
+//     switch (GName) {
+//        case 'y' || 'yes' :
+//            alert('correct');
+//            x=4;
+//            break;
+//            case 'n' || 'no' :
+//                alert ('wrong amswer');
+//               GName= prompt('try again');
+//              break;
+    
+//        // default:
+//        //     alert('by the way my name is nooraldeen');
+//        //     break;
+//     }
+    
+    
+// }
